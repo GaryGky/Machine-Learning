@@ -1,9 +1,5 @@
 import pandas as pd
-import xgboost as xgb
 from pandas import DataFrame
-from xgboost import plot_importance
-import lightgbm as lgb
-
 
 train = pd.read_csv("train_XY.csv", index_col=False)
 test = pd.read_csv('test.csv',index_col=False)
