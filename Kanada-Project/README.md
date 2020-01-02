@@ -2,7 +2,7 @@
 
 > `KAGGLE-KANNADA-OPEN-COMPETITION`
 >
-> `<https://www.kaggle.com/higgstachyon/kannada-mnist/discussion>`
+> `<https://www.kaggle.com/higgstachyon/kannada-mnist>`
 
 ## Introduction
 
@@ -110,7 +110,7 @@ plt.title(train_y[1])
 
 ##### *output*
 
-![1577971930323](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\1577971930323.png)
+![1577971930323](image/1577971930323.png)
 
 ##### *It looks like a zero but actually it's an one*
 
@@ -118,7 +118,7 @@ plt.title(train_y[1])
 
 ##### Based on Le-Net model
 
-![1577972376915](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\1577972376915.png)
+![1577972376915](image/1577972376915.png)
 
 ```
 
@@ -248,7 +248,7 @@ classifier.fit(train_feature, train_y, batch_size=128, epochs=10)
 
 #### `Result`
 
-![1577973090009](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\1577973090009.png)
+![1577973090009](image/1577973090009.png)
 
 #### `Conclusion`
 
