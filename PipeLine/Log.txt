@@ -1,0 +1,20 @@
+> ### 以下主要记录将TensorFlow转换为PyTorch过程中遇到的问题
+
+- 在计算交叉熵损失函数的时候，需要做一个独热编码计算loss，不确定当前操作是否可行
+
+- ```
+  91 model = Model(inputs=model.input, outputs=x)  # 传入模型的输入和输出
+  ```
+
+- torch中模型预测不能使用predict的替代方法，直接输入和输出。
+
+- torch中function的代替
+
+  ```
+  gradient_function = K.function([model.input], [conv_output, grads])  # 得到一个计算梯度的函数
+  
+  output, grads_val = gradient_function([img_Tensor])  # 得到卷积层的输出和梯度
+  output, grads_val = output[0, :], grads_val[0, :, :, :]  # 取第一行
+  ```
+
+  
