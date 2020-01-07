@@ -1,3 +1,4 @@
-造轮子真的很好玩儿。
+Generalize Basic Wheels of ML Model
 
-支持向量机可以直接拉出去毙掉吗？？根本无法忍受的训练速度。
+- Random-Forest
+- Support Vector Classifier
